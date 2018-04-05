@@ -17,6 +17,9 @@ defmodule NestedLayoutWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/about", HelpController, :about
+    get "/faq", HelpController, :faq
+    get "/contact", HelpController, :contact
   end
 
   # Other scopes may use custom stacks.
